@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#ffe5ef">
+<title>برای مهدیس 💗</title>
+<style>
+:root{--pink:#ff6f9f;--deep:#d93672;--pale:#fff0f6;--rose:#ffd5e4;--ink:#754456;--white:#fffafd}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Tahoma,"Segoe UI",sans-serif;color:var(--ink);background:linear-gradient(135deg,#fff8fb,#ffe8f1 55%,#fff5fa);overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+header{position:sticky;top:0;z-index:10;background:#fff9fceF;backdrop-filter:blur(12px);border-bottom:1px solid #ffd1e1}
+.nav{max-width:1100px;margin:auto;padding:13px 20px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{font-size:1.15rem;font-weight:800;color:var(--deep)}
+nav{display:flex;gap:18px;flex-wrap:wrap;font-size:.9rem}
+nav a:hover{color:var(--deep)}
+.hero{min-height:76vh;display:grid;place-items:center;text-align:center;padding:70px 20px 55px;position:relative;isolation:isolate;background:radial-gradient(ellipse at 50% 30%,#fff 0,#ffe3ee 48%,transparent 72%)}
+.hero:before,.hero:after{content:"♡";position:absolute;color:#ff9abd;opacity:.45;font-size:clamp(5rem,16vw,12rem);z-index:-1;animation:float 5s ease-in-out infinite}
+.hero:before{right:5%;top:14%}.hero:after{left:6%;bottom:8%;animation-delay:-2s}
+.hero-inner{max-width:780px}
+.eyebrow{color:var(--deep);font-weight:700;letter-spacing:.02em}
+h1{font-size:clamp(2.5rem,8vw,5rem);line-height:1.2;margin:12px 0;color:var(--deep);text-shadow:0 5px 22px #ffb5ce80}
+.subtitle{font-size:clamp(1rem,2.8vw,1.25rem);line-height:2;max-width:600px;margin:0 auto 24px}
+.envelope{border:0;background:transparent;cursor:pointer;display:block;margin:28px auto 15px;width:min(330px,82vw);filter:drop-shadow(0 14px 18px #e36b9840);transition:transform .25s}
+.envelope:hover{transform:translateY(-5px) rotate(-1deg)}
+.env-body{height:170px;background:linear-gradient(145deg,#ffd9e7,#ffb9d2);border:2px solid #ff8fb4;border-radius:12px;position:relative;display:grid;place-items:center;overflow:hidden}
+.env-flap{position:absolute;top:0;left:0;width:100%;height:90px;background:linear-gradient(145deg,#ffeaf2,#ffc7db);clip-path:polygon(0 0,100% 0,50% 100%);border-bottom:2px solid #ff91b7;transform-origin:top;transition:transform .7s;z-index:2}
+.env-heart{font-size:3.2rem;color:#fff;filter:drop-shadow(0 3px 4px #d9367270)}
+.envelope.open .env-flap{transform:rotateX(180deg)}
+.hint{font-size:.9rem;color:#bd4b78}
+.btn{border:0;border-radius:999px;padding:13px 25px;background:linear-gradient(120deg,#ff8eb4,#ed4d87);color:white;font:inherit;font-weight:700;box-shadow:0 8px 18px #ef6b9b40;cursor:pointer;transition:transform .2s}
+.btn:hover{transform:translateY(-2px)}
+section{max-width:1050px;margin:0 auto;padding:52px 20px}
+.section-title{text-align:center;color:var(--deep);font-size:clamp(1.5rem,4vw,2rem);margin:0 0 12px}
+.section-sub{text-align:center;line-height:1.9;margin:0 auto 28px;max-width:650px}
+.letter-card{max-width:760px;margin:0 auto;background:#fffafc;border:1px solid #ffd0e0;border-radius:22px;padding:clamp(22px,5vw,42px);box-shadow:0 16px 38px #db6a9820;line-height:2.25;position:relative}
+.letter-card:before{content:"♡";position:absolute;top:12px;left:20px;color:#ff9dbd;font-size:2rem}
+.letter-card p{margin:0 0 12px}
+.signature{color:var(--deep);font-weight:800;text-align:left;margin-top:22px}
+.reasons{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:16px;margin-top:25px}
+.reason{background:#fffafd;border:1px solid #ffd3e2;border-radius:20px;padding:24px 18px;text-align:center;box-shadow:0 8px 22px #d9578b12;transition:transform .2s}
+.reason:hover{transform:translateY(-5px)}
+.reason .icon{font-size:2rem}.reason h3{color:var(--deep);margin:10px 0 7px}.reason p{line-height:1.9;margin:0;font-size:.94rem}
+.surprise-box{text-align:center;background:linear-gradient(140deg,#ffe1ec,#fff8fb);border:1px solid #ffc8dc;border-radius:28px;padding:38px 20px}
+#surpriseMessage{display:none;max-width:650px;margin:22px auto 0;font-size:1.2rem;line-height:2;color:var(--deep);font-weight:700}
+#surpriseMessage.show{display:block;animation:pop .5s ease}
+footer{text-align:center;padding:25px 15px;color:#b44a76;border-top:1px solid #ffd3e2;background:#fff9fc}
+#hearts{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:20}
+.floating-heart{position:absolute;bottom:-40px;color:#ff6f9f;animation:rise linear forwards;text-shadow:0 2px 8px #ff9fbe70}
+@keyframes rise{to{transform:translateY(-110vh) rotate(25deg);opacity:0}}
+@keyframes float{0%,100%{transform:translateY(0) rotate(-8deg)}50%{transform:translateY(-16px) rotate(8deg)}}
+@keyframes pop{0%{transform:scale(.8);opacity:0}100%{transform:scale(1);opacity:1}}
+@media(max-width:600px){.nav{align-items:flex-start;flex-direction:column}.nav nav{gap:12px;font-size:.82rem}.hero{min-height:68vh}.env-body{height:145px}section{padding:40px 16px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
+</style>
+</head>
+<body>
+<div id="hearts" aria-hidden="true"></div>
+<header><div class="nav">
+  <a class="brand" href="#home">♡ مهدیس ♡</a>
+  <nav aria-label="منوی سایت">
+    <a href="#letter">نامه</a><a href="#reasons">چرا دوستت دارم؟</a><a href="#surprise">سورپرایز</a>
+  </nav>
+</div></header>
+<main>
+<section class="hero" id="home">
+  <div class="hero-inner">
+    <div class="eyebrow">یه گوشه‌ی کوچیک از قلبم، برای تو 🎀</div>
+    <h1>مهدیسِ عزیزم 💗</h1>
+    <p class="subtitle">این صفحه رو فقط برای تو ساختم؛ چون بعضی آدم‌ها اون‌قدر خاصن که باید یه جای مخصوص خودشون داشته باشن. 🌸</p>
+    <button class="envelope" id="envelope" aria-label="باز کردن نامه" onclick="openLetter()">
+      <div class="env-body"><div class="env-flap"></div><div class="env-heart">♡</div></div>
+    </button>
+    <p class="hint" id="envelopeHint">روی پاکت بزن تا نامه‌ات باز بشه 💌</p>
+    <a class="btn" href="#letter">بریم سراغ نامه 💌</a>
+  </div>
+</section>
+<section id="letter">
+  <h2 class="section-title">💌 یه نامه برای مهدیس</h2>
+  <p class="section-sub">چند تا حرف کوچیک که از ته قلبم برات نوشتم…</p>
+  <article class="letter-card">
+    <p>مهدیس جانم، 💗</p>
+    <p>شاید نتونم همیشه قشنگ‌ترین جمله‌های دنیا رو پیدا کنم، ولی می‌خوام بدونی که بودنت برام خیلی ارزشمنده.</p>
+    <p>تو با همون چیزهای کوچیکی که شاید خودت حتی متوجهشون هم نشی، می‌تونی روزم رو قشنگ‌تر کنی. حرف زدن باهات، خندیدن باهات و حتی فکر کردن به خاطره‌هامون، برای من کلی معنی داره.</p>
+    <p>این سایت شاید فقط چند تا رنگ صورتی و قلب کوچولو باشه، اما پشتش یه عالمه ذوق هست؛ چون برای توئه. امیدوارم هر وقت دیدیش، یه لبخند کوچیک روی لبت بیاد. 🧸🌷</p>
+    <p>ممنون که خودتی، مهدیسِ قشنگم. 💞</p>
+    <div class="signature">با کلی عشق، فقط برای تو ♡</div>
+  </article>
+</section>
+<section id="reasons">
+  <h2 class="section-title">🌸 چند دلیل کوچولو برای دوست داشتنت</h2>
+  <p class="section-sub">و البته این‌ها فقط چندتاشن…</p>
+  <div class="reasons">
+    <article class="reason"><div class="icon">😊</div><h3>لبخندت</h3><p>چون دیدن لبخندت می‌تونه یه روز معمولی رو قشنگ‌تر کنه.</p></article>
+    <article class="reason"><div class="icon">💗</div><h3>مهربونیت</h3><p>چون مهربونی‌ات یه حس گرم و دوست‌داشتنی داره.</p></article>
+    <article class="reason"><div class="icon">🦋</div><h3>خودِ خودت</h3><p>چون لازم نیست شبیه هیچ‌کس دیگه‌ای باشی؛ خاص بودنت کافیه.</p></article>
+    <article class="reason"><div class="icon">🎀</div><h3>لحظه‌های ساده</h3><p>چون حتی یه گفت‌وگوی کوچیک با تو می‌تونه خاطره بشه.</p></article>
+  </div>
+</section>
+<section id="surprise">
+  <div class="surprise-box">
+    <h2 class="section-title">🎁 یه سورپرایز کوچولو</h2>
+    <p class="section-sub">یه دکمه هست که فقط برای مهدیس ساخته شده…</p>
+    <button class="btn" onclick="showSurprise()">اینجا رو کلیک کن 💖</button>
+    <div id="surpriseMessage">مهدیس! 💗 اگه قرار باشه این صفحه فقط یه چیز بهت بگه، اون اینه: تو برای من مهمی، و امیدوارم امروزت پر از لبخند و اتفاق‌های قشنگ باشه. 🌷🧸💞</div>
+  </div>
+</section>
+</main>
+<footer>با عشق ساخته شده، مخصوص مهدیس ♡ 🎀</footer>
+<script>
+function openLetter(){
+  document.getElementById('envelope').classList.toggle('open');
+  document.getElementById('envelopeHint').textContent='نامه‌ات باز شد؛ برو پایین و بخونش 💗';
+  document.getElementById('letter').scrollIntoView({behavior:'smooth'});
+  burstHearts(14);
+}
+function showSurprise(){
+  document.getElementById('surpriseMessage').classList.add('show');
+  burstHearts(28);
+}
+function burstHearts(count){
+  const layer=document.getElementById('hearts');
+  const symbols=['♡','♥','💗','💕','✿'];
+  for(let i=0;i<count;i++){
+    const h=document.createElement('span');
+    h.className='floating-heart';
+    h.textContent=symbols[Math.floor(Math.random()*symbols.length)];
+    h.style.left=(Math.random()*100)+'%';
+    h.style.fontSize=(16+Math.random()*24)+'px';
+    h.style.animationDuration=(3+Math.random()*3)+'s';
+    h.style.animationDelay=(Math.random()*.6)+'s';
+    layer.appendChild(h);
+    setTimeout(()=>h.remove(),7000);
+  }
+}
+setInterval(()=>{if(Math.random()>.35)burstHearts(1)},1500);
+</script>
+</body>
+</html>
